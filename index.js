@@ -1,7 +1,7 @@
 const Web3 = require('web3');
 
-const getWeb3 = (host = 'http://127.0.0.1:8545') =>
-  new Promise((resolve, reject) => {
+module.exports = function getWeb3(host = 'http://127.0.0.1:8545') {
+  return new Promise((resolve, reject) => {
     // Wait for loading completion to avoid race conditions with web3 injection timing.
     window.addEventListener('load', async () => {
       // Modern dapp browsers...
@@ -32,5 +32,4 @@ const getWeb3 = (host = 'http://127.0.0.1:8545') =>
       }
     });
   });
-
-module.exports = { getWeb3 };
+};
