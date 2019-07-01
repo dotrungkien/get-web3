@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to get-web3 👋</h1>
+<h1 align="center">@dotrungkien/get-web3 👋</h1>
 <p>
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
